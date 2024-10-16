@@ -1,0 +1,9 @@
+# 학습 데이터와 검증 데이터의 이미지 경로를 지정합니다.
+train: /home/elicer/Kinds/data/train/images
+val: /home/elicer/Kinds/data/validation/images
+
+# 클래스 수를 지정합니다.
+nc: 6
+
+# 클래스 이름을 리스트로 지정합니다.
+names: ['jaywalk', 'crosswalk', 'sidewalk', 'um_jaywalk', 'um_crosswalk', 'um_sidewalk']
