@@ -1,0 +1,30 @@
+method: random
+metric:
+  goal: minimize
+  name: loss
+parameters:
+  batch_size:
+    values:
+      - 4
+      - 8
+      - 16
+      - 32
+  epochs:
+    value: 30
+  img_size:
+    value: 1080
+  lr0:
+    max: 0.1
+    min: 0.0001
+  lrf:
+    max: 0.2
+    min: 0.1
+  momentum:
+    values:
+      - 0.9
+      - 0.95
+  weight_decay:
+    values:
+      - 0.0001
+      - 0.001
+program: train.py
