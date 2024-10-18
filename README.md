@@ -1,5 +1,5 @@
 # Kinds | 세종 자율주행 2회 경진대회
-![자율주행](https://github.com/user-attachments/assets/8f9f1b44-1ba2-4277-8608-214c4a01ac8b)
+![자율주행](https://github.com/user-attachments/assets/8f9f1b44-1ba2-4277-8608-214c4a01ac8b)  
 [세종 2회 경진대회]: https://www.sejong.ai/kor/contest_02.do
 ## 프로젝트 설명
 ### | 팀원
@@ -9,6 +9,9 @@
 ### | 목표 성과
 * 정확도(Accuracy) 90% 이상의 보행자 탐지 모델 구현
 * 무단횡단 보행자, 횡단보도 보행자에 대한 정확한 분류 탐지
+### | 모델
+yolo를 사용한 객체 탐지
+![yolo](https://github.com/user-attachments/assets/e4f17194-845a-4761-9d60-b7045d48dbe2)
 
 ## 프로젝트에 사용된 기술 및 버전
 ### | Language
