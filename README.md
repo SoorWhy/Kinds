@@ -10,7 +10,7 @@
 * 정확도(Accuracy) 90% 이상의 보행자 탐지 모델 구현
 * 무단횡단 보행자, 횡단보도 보행자에 대한 정확한 분류 탐지
 ### | 모델
-yolo를 사용한 객체 탐지
+* yolo를 사용한 객체 탐지
 ![yolo](https://github.com/user-attachments/assets/e4f17194-845a-4761-9d60-b7045d48dbe2)
 
 ## 프로젝트에 사용된 기술 및 버전
