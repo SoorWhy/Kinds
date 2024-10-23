@@ -22,14 +22,13 @@
 * opencv-python-headless `4.10.0.84`
 ### | Tool
 * Git Hub
-* Git Bash
 * WandB
 ### | System
 * Linux | Elice Cloud
 
 ## 디렉터리 정보
 ### | data
-* 이미지 학습을 위한 데이터셋
+* 이미지 학습을 위한 원본 데이터셋
 ```
 data
  ┣ train
@@ -40,10 +39,38 @@ data
  ┃ ┗ labels
  ┗ data.yaml
 ```
+### | preprocess
+* 이미지 전처리 분류 데이터셋
+* close_image : 다소 가까운 거리의 CCTV 이미지
+* far_image : 먼 거리의 CCTV 이미지
+ ```
+preprocess
+ ┣ close_image
+ ┣ close_output
+ ┣ far_image
+ ┣ far_output
+ ┗ preprocess_image.py
+```
+* _output : 각각 전처리 후 데이터
+* preprocess_image.py : 각각 환경에 맞게 전처리 하는 코드
+### | data_pp
+* 이미지 전처리 후 데이터셋
+```
+data_pp
+ ┣ train
+ ┃ ┣ images
+ ┃ ┗ labels
+ ┗ data.yaml
+```
+### | augmentation.py
+* 데이터 증강을 위한 python 코드
+* 증강 데이터는 용량이 커서 업로드 하지 못함
 ### | code.ipynb
 * 라이브러리 설치 및 모델 학습을 위한 notebook 코드
 ### | train.py
-* 딥러닝 모델 학습을 위한 python 코드
+* 딥러닝 모델 학습을 위한 python 코드 
+### | sweep.yaml
+* 하이퍼파라미터 스윕을 위한 설정 파일
 
 ## 전처리 및 증강 기법
 ### | 전처리 과정
@@ -62,6 +89,8 @@ data
 3. 이미지 리사이즈
 * 목적: YOLO 학습에 적합한 해상도로 이미지 크기를 1920x1080으로 조정
 * 적용 방식: CLAHE와 Super-Resolution을 적용한 후 이미지 크기를 고정된 해상도로 리사이즈
+
+![preprocess](https://github.com/user-attachments/assets/cb2bf54e-3738-4b1a-99b0-462f6bd0fd7d)
 
 ### | 증강 기법
 전처리된 이미지를 바탕으로 각각의 거리에 맞는 증강 기법을 적용하여 다양한 상황에서 보행자를 탐지할 수 있도록 데이터를 증강
