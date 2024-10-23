@@ -90,7 +90,7 @@ data_pp
 * 목적: YOLO 학습에 적합한 해상도로 이미지 크기를 1920x1080으로 조정
 * 적용 방식: CLAHE와 Super-Resolution을 적용한 후 이미지 크기를 고정된 해상도로 리사이즈
 
-![preprocess](https://github.com/user-attachments/assets/cb2bf54e-3738-4b1a-99b0-462f6bd0fd7d)
+![preprocess](https://github.com/user-attachments/assets/0b59e5d0-5bdb-4973-a3d9-4509ea60b0f3)
 
 ### | 증강 기법
 전처리된 이미지를 바탕으로 각각의 거리에 맞는 증강 기법을 적용하여 다양한 상황에서 보행자를 탐지할 수 있도록 데이터를 증강
