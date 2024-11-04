@@ -27,6 +27,8 @@
 * WandB
 ### | System
 * Linux | Elice Cloud
+* Driver Version: 531.14
+* CUDA Version: 12.1
 
 ## 디렉터리 정보
 ### | data
