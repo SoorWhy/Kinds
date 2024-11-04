@@ -16,10 +16,12 @@
 ## 프로젝트에 사용된 기술 및 버전
 ### | Language
 * Python `3.10.12`
+* numpy `2.1.2`
 * torch `2.4.1+cu121`
 * ultralytics `8.3.13`
 * wandb `0.18.3`
 * opencv-python-headless `4.10.0.84`
+* scikit-learn `1.5.2`
 ### | Tool
 * Git Hub
 * WandB
@@ -67,10 +69,16 @@ data_pp
 * 증강 데이터는 용량이 커서 업로드 하지 못함
 ### | code.ipynb
 * 라이브러리 설치 및 모델 학습을 위한 notebook 코드
-### | train.py
-* 딥러닝 모델 학습을 위한 python 코드 
+### | evaluate.py
+* 모델 성능 평가 및 추론을 위한 python 코드
+### | requirements.txt
+* 종속성 설치를 위한 txt 파일
 ### | sweep.yaml
-* 하이퍼파라미터 스윕을 위한 설정 파일
+* 하이퍼파라미터 스윕을 위한 yaml 파일
+### | train.py
+* 딥러닝 모델 학습을 위한 python 코드
+### | train2.py
+* 딥러닝 모델 학습과 WandB 스윕을 위한 python 코드 
 
 ## 전처리 및 증강 기법
 ### | 전처리 과정
@@ -143,3 +151,9 @@ data_pp
   - 설정: alpha=(0.1, 0.3), 20% 확률로 적용
    
 ## 결과
+![0001-20240628-123941](https://github.com/user-attachments/assets/8ffb5b36-1792-41ae-b1b8-871d6822d185)
+* 라벨: {0:무단횡단보행자, 1:횡단보도보행자, 2:인도보행자}
+### | 평가 데이터 추론 결과
+* Precision : 0.9278
+* Recall : 0.8603
+* Accuracy : 0.7220
