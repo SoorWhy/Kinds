@@ -161,6 +161,8 @@ data_pp
 * Accuracy : 0.7220
 ### | 성과
 - **우수상 수상**
+  
+![image](https://github.com/user-attachments/assets/31be1d08-8da8-41f9-95e6-a56aa78c74ce)
 
 ## 프로젝트 회고
 ### | 어려웠던 점
